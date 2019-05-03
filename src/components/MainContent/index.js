@@ -5,10 +5,9 @@ import ChatWindow from '../../containers/ChatWindow';
 import Login from '../Login/Login';
 import UnmatchedPath from '../UnmatchedPath';
 import ProtectedRoute from '../ReusableComponents/ProtectedRoute';
-import './MainContent.scss';
 
 const MainContent = () => (
-  <main>
+  <main className="mainContent">
     <Switch>
       <ProtectedRoute exact path="/" component={Dashboard} />
       <ProtectedRoute exact path="/chat-window" component={ChatWindow} />
