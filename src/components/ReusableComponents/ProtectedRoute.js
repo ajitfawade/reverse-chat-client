@@ -7,7 +7,8 @@ class ProtectedRoute extends PureComponent {
     this.state = {};
   }
   render() {
-    const { path, component, isLoggedIn, exact } = this.props;
+    const { path, component, exact } = this.props;
+    const isLoggedIn = JSON.parse(localStorage.getItem('isLoggedIn'));
     return (
       <div>
         {isLoggedIn ? (
