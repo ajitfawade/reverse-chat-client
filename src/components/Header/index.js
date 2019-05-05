@@ -1,12 +1,15 @@
 import React from 'react';
+import { Container, Row, Col } from 'reactstrap';
 import './Header.scss';
 
 const Header = () => (
-  <div className="p-grid">
-    <div className="p-col-12 p-md-6 p-lg-3">
-      <h1 className="header">Reverse Chat</h1>
-    </div>
-  </div>
+  <Container>
+    <Row>
+      <Col md="6" lg="3">
+        <h1 className="header">Reverse Chat</h1>
+      </Col>
+    </Row>
+  </Container>
 );
 
 export default Header;
