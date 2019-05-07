@@ -1,4 +1,4 @@
-const API_BASE_URL = 'https://jsonplaceholder.typicode.com/';
+const API_BASE_URL = 'http://localhost:4000/api/';
 export default class RequestHandler {
   static isSuccess(response) {
     if (!(response.ok || response.status === 200 || response.status === 201)) {

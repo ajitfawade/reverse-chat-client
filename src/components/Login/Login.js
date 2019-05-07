@@ -26,7 +26,7 @@ export default class Login extends PureComponent {
   render() {
     return (
       <div className="facebook-login-button">
-        {/* <FacebookProvider appId="272441676793214">
+        <FacebookProvider appId="272441676793214">
           <LoginButton
             scope="email"
             onCompleted={this.handleResponse}
@@ -39,8 +39,8 @@ export default class Login extends PureComponent {
               </span>
             )}
           </LoginButton>
-        </FacebookProvider> */}
-        <span onClick={this.handleLoginSuccess}>Login Via Facebook</span>
+        </FacebookProvider>
+        {/* <span onClick={this.handleLoginSuccess}>Login Via Facebook</span> */}
       </div>
     );
   }
